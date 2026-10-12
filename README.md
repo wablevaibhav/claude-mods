@@ -7,6 +7,66 @@ Two small Claude Code mods (plugins of function hooks):
 | **task-progress** | A progress band above the prompt. It follows the todo list by itself, gives Claude a `progress` tool to report steps, shows a live "working" timer, and carries your 5h / weekly usage and the active model. `/progress` hides or shows it. |
 | **usage-dashboard** | A `/usage` pane: 5-hour and weekly limit gauges with reset times, burn rate and limit risk, per-model tokens and estimated cost, tasks with a time-left estimate, and a 7-day chart. A short `5h 34% · wk 12% · opus-5-5` status line shows after your first reply. |
 
+## What it looks like
+
+> Illustrative text previews with sample numbers, not screenshots. Real colours (green / amber / red gauges, orange accents) follow your terminal theme. Screenshots will replace these.
+
+**task-progress**: the band above the prompt
+
+```
+╭──────────────────────────────────────────────────────────────────╮
+│ ⠹ Build the dashboard              3/7 · 43% · ~2m left · 4m 10s │
+│ ███████████████▌░░░░░░░░░░░░░░░░░░░░░░░░                         │
+│   ↑ 1 earlier                                                    │
+│ ✓ Read usage logs                                                │
+│ ✓ Aggregate by model                                             │
+│ ▸ Wire the charts                                                │
+│ ○ Add the tasks board                                            │
+│ ○ Polish and test                                                │
+│   ↓ 1 more                                                       │
+│ 5h 35% (2h 10m) · wk 12% · opus-5-5            [Collapse] [Hide] │
+╰──────────────────────────────────────────────────────────────────╯
+```
+
+**usage-dashboard**: the `/usage` pane
+
+```
+Claude usage                                     updated 12s ago
+╭──────────────────────────────────────────────────────────────────╮
+│ 5-hour session                                  resets in 2h 10m │
+│ ██████████████▌░░░░░░░░░░░░░░░░░░░░░░░░░  35%                    │
+│ burning 0.40%/min · full in ~2h 5m                               │
+╰──────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────╮
+│ Weekly                                           resets in 4d 3h │
+│ █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  12%                    │
+╰──────────────────────────────────────────────────────────────────╯
+● Limit risk green   session cost ~$1.42
+╭──────────────────────────────────────────────────────────────────╮
+│ Models                                 active: opus-5-5 (3m ago) │
+│ ★ opus-5-5    ████████░░   78%    1.2M   34 msgs  ~$0.91         │
+│   sonnet-5-5  ██░░░░░░░░   22%    340k   12 msgs  ~$0.18         │
+│ tokens: in / out / cache = 80k / 190k / 1.3M                     │
+╰──────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────╮
+│ Tasks  ▸ 1 in progress   ○ 3 pending   ✓ 2 today                 │
+│ ▸ Wire the charts  1m 20s                                        │
+│ ○ Add the tasks board                                            │
+│ ○ Polish and test                                                │
+│ Time left 25m (best case 14m) · confidence medium, 4 finished    │
+│ Should finish within the current 5h window.                      │
+╰──────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────╮
+│ Last 7 days                                                      │
+│ Wed 07 ██████████████████░░░░░░░░░░░░░░░░░░░░░░  420k            │
+│ Thu 08 ███████████████████████████████░░░░░░░░░  740k            │
+│ Fri 09 ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  240k            │
+│ Sat 10 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  0               │
+│ Sun 11 ██████████████████████░░░░░░░░░░░░░░░░░░  530k            │
+│ Mon 12 ████████████████████████████████████████  1.0M            │
+╰──────────────────────────────────────────────────────────────────╯
+```
+
 ## Install
 
 In a terminal Claude Code session (the desktop app's Code tab does not run `/plugin install`):
