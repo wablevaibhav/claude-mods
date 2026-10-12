@@ -9,26 +9,13 @@ Two small Claude Code mods (plugins of function hooks):
 
 ## What it looks like
 
-> Illustrative text previews with sample numbers, not screenshots. Real colours (green / amber / red gauges, orange accents) follow your terminal theme. Screenshots will replace these.
-
 **task-progress**: the band above the prompt
 
-```
-╭──────────────────────────────────────────────────────────────────╮
-│ ⠹ Build the dashboard              3/7 · 43% · ~2m left · 4m 10s │
-│ ███████████████▌░░░░░░░░░░░░░░░░░░░░░░░░                         │
-│   ↑ 1 earlier                                                    │
-│ ✓ Read usage logs                                                │
-│ ✓ Aggregate by model                                             │
-│ ▸ Wire the charts                                                │
-│ ○ Add the tasks board                                            │
-│ ○ Polish and test                                                │
-│   ↓ 1 more                                                       │
-│ 5h 35% (2h 10m) · wk 12% · opus-5-5            [Collapse] [Hide] │
-╰──────────────────────────────────────────────────────────────────╯
-```
+![task-progress band: title, smooth bar, step list, 5h / weekly usage and active model](docs/progress-band.png)
 
 **usage-dashboard**: the `/usage` pane
+
+> Illustrative text preview with sample numbers, not a screenshot. A real screenshot will replace it.
 
 ```
 Claude usage                                     updated 12s ago
