@@ -3,7 +3,7 @@
   "owner": {
     "name": "Vaibhav Wable"
   },
-  "description": "Progress band and usage dashboard mods for Claude Code.",
+  "description": "Progress, usage, context, safety, git and notes mods for Claude Code.",
   "plugins": [
     {
       "name": "task-progress",
@@ -14,6 +14,26 @@
       "name": "usage-dashboard",
       "source": "./usage-dashboard",
       "description": "/usage-dashboard pane: 5h and weekly limit %, current and top model, tasks, time left and limit risk."
+    },
+    {
+      "name": "context-meter",
+      "source": "./context-meter",
+      "description": "Context-window meter with warnings at 70% and 90% so you compact or start fresh in time."
+    },
+    {
+      "name": "safety-guard",
+      "source": "./safety-guard",
+      "description": "Blocks destructive commands, force pushes, pipe-to-shell installs and writes to secret or key files."
+    },
+    {
+      "name": "git-band",
+      "source": "./git-band",
+      "description": "One-line git status band above the prompt: branch, ahead/behind, staged, changed, untracked."
+    },
+    {
+      "name": "notes-todos",
+      "source": "./notes-todos",
+      "description": "Your own persistent todo list and notes across sessions with /mytodo and /mynote."
     }
   ]
 }

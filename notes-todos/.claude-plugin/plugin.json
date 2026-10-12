@@ -1,0 +1,11 @@
+{
+  "name": "notes-todos",
+  "version": "0.1.0",
+  "description": "Your own persistent todo list and notes across sessions: /mytodo and /mynote, with an open-count in the status line.",
+  "author": {
+    "name": "Vaibhav Wable",
+    "url": "https://github.com/wablevaibhav"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/wablevaibhav/claude-mods"
+}

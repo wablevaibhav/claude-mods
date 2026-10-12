@@ -1,0 +1,9 @@
+{
+  "name": "safety-guard",
+  "version": "0.1.0",
+  "description": "Blocks risky actions before they run: recursive deletes of root or home, force pushes, pipe-to-shell installs, and writes to secret or key files.",
+  "types": "./types/index.d.ts",
+  "author": { "name": "Vaibhav Wable", "url": "https://github.com/wablevaibhav" },
+  "license": "MIT",
+  "repository": "https://github.com/wablevaibhav/claude-mods"
+}

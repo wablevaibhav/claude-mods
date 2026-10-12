@@ -1,0 +1,9 @@
+{
+  "name": "context-meter",
+  "version": "0.1.0",
+  "description": "Shows how full the context window is, warns at 70% and 90% so you can compact or start fresh before quality drops.",
+  "types": "./types/index.d.ts",
+  "author": { "name": "Vaibhav Wable", "url": "https://github.com/wablevaibhav" },
+  "license": "MIT",
+  "repository": "https://github.com/wablevaibhav/claude-mods"
+}
