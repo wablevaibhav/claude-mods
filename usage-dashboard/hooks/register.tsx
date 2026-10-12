@@ -89,7 +89,7 @@ async function refreshLimits($: EngineInterface) {
 export const register: Register = on => {
   on('session.start', async ($, e, next) => {
     await $.command.register({
-      name: 'usage',
+      name: 'usage-dashboard',
       description: 'Show the usage dashboard: 5h and weekly limits, models, tasks, ETA',
     })
 
@@ -108,7 +108,7 @@ export const register: Register = on => {
     return next(e)
   })
 
-  on('command.run', { command: 'usage' }, async $ => {
+  on('command.run', { command: 'usage-dashboard' }, async $ => {
     await refreshLimits($).catch(() => undefined)
     await $.ui.open({ id: PANE, title: 'Usage' })
 

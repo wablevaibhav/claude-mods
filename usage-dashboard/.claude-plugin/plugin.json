@@ -1,7 +1,7 @@
 {
   "name": "usage-dashboard",
-  "version": "0.1.0",
-  "description": "Claude usage dashboard pane (/usage): 5h and weekly limit %, current and top model, pending / in-progress tasks, ETA and limit risk.",
+  "version": "0.1.1",
+  "description": "Claude usage dashboard pane (/usage-dashboard): 5h and weekly limit %, current and top model, pending / in-progress tasks, ETA and limit risk.",
   "types": "./types/index.d.ts",
   "author": {
     "name": "Vaibhav Wable",

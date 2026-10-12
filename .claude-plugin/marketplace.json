@@ -13,7 +13,7 @@
     {
       "name": "usage-dashboard",
       "source": "./usage-dashboard",
-      "description": "/usage pane: 5h and weekly limit %, current and top model, tasks, time left and limit risk."
+      "description": "/usage-dashboard pane: 5h and weekly limit %, current and top model, tasks, time left and limit risk."
     }
   ]
 }

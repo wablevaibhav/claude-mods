@@ -5,7 +5,7 @@ Two small Claude Code mods (plugins of function hooks):
 | Mod | What it adds |
 |---|---|
 | **task-progress** | A progress band above the prompt. It follows the todo list by itself, gives Claude a `progress` tool to report steps, shows a live "working" timer, and carries your 5h / weekly usage and the active model. `/progress` hides or shows it. |
-| **usage-dashboard** | A `/usage` pane: 5-hour and weekly limit gauges with reset times, burn rate and limit risk, per-model tokens and estimated cost, tasks with a time-left estimate, and a 7-day chart. A short `5h 34% · wk 12% · opus-5-5` status line shows after your first reply. |
+| **usage-dashboard** | A `/usage-dashboard` pane: 5-hour and weekly limit gauges with reset times, burn rate and limit risk, per-model tokens and estimated cost, tasks with a time-left estimate, and a 7-day chart. A short `5h 34% · wk 12% · opus-5-5` status line shows after your first reply. |
 
 ## What it looks like
 
@@ -13,7 +13,7 @@ Two small Claude Code mods (plugins of function hooks):
 
 ![task-progress band: title, smooth bar, step list, 5h / weekly usage and active model](docs/progress-band.png)
 
-**usage-dashboard**: the `/usage` pane
+**usage-dashboard**: the `/usage-dashboard` pane
 
 > Illustrative text preview with sample numbers, not a screenshot. A real screenshot will replace it.
 
@@ -72,6 +72,8 @@ claude --plugin-dir ./task-progress --plugin-dir ./usage-dashboard
 ```
 
 ## Notes and limits
+
+- **`/usage` is Claude Code's own built-in panel.** This mod's pane opens with `/usage-dashboard`, so the two don't collide.
 
 - **Usage figures** come from the rate-limit windows Anthropic reports on each reply (`five_hour`, `seven_day`). Accounts without those windows (for example some API-key setups) show "No reading yet".
 - **Model totals, daily tokens and finished-task durations** only count turns the mod has seen since you installed it. They are kept per machine.
