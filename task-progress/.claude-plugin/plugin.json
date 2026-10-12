@@ -1,0 +1,12 @@
+{
+  "name": "task-progress",
+  "version": "0.1.0",
+  "description": "Always-visible progress band above the prompt: follows the todo list automatically, lets Claude report progress with a tool, and shows a live 'working' timer while a turn runs.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Vaibhav Wable",
+    "url": "https://github.com/wablevaibhav"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/wablevaibhav/claude-mods"
+}

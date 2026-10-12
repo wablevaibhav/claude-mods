@@ -1,0 +1,19 @@
+{
+  "name": "claude-mods",
+  "owner": {
+    "name": "Vaibhav Wable"
+  },
+  "description": "Progress band and usage dashboard mods for Claude Code.",
+  "plugins": [
+    {
+      "name": "task-progress",
+      "source": "./task-progress",
+      "description": "Always-visible progress band above the prompt: follows the todo list, lets Claude report progress with a tool, shows a working timer and your 5h / weekly usage."
+    },
+    {
+      "name": "usage-dashboard",
+      "source": "./usage-dashboard",
+      "description": "/usage pane: 5h and weekly limit %, current and top model, tasks, time left and limit risk."
+    }
+  ]
+}
